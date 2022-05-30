@@ -1,0 +1,5 @@
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ClienteTCP\EntidadesCliente\bin\Debug\EntidadesCliente.dll
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ClienteTCP\EntidadesCliente\bin\Debug\EntidadesCliente.pdb
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ClienteTCP\EntidadesCliente\obj\Debug\EntidadesCliente.csproj.CoreCompileInputs.cache
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ClienteTCP\EntidadesCliente\obj\Debug\EntidadesCliente.dll
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ClienteTCP\EntidadesCliente\obj\Debug\EntidadesCliente.pdb

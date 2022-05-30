@@ -1,0 +1,13 @@
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\bin\Debug\LogicaNegocio.dll
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\bin\Debug\LogicaNegocio.pdb
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\obj\Debug\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\obj\Debug\LogicaNegocio.csproj.CopyComplete
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\obj\Debug\LogicaNegocio.dll
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\obj\Debug\LogicaNegocio.pdb
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\obj\Debug\LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\bin\Debug\Datos.dll
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\bin\Debug\Entidades.dll
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\bin\Debug\Datos.pdb
+C:\Users\Minor\Desktop\C#\Proyecto\MinorMarin-ServidorTCP\LogicaNegocio\bin\Debug\Entidades.pdb

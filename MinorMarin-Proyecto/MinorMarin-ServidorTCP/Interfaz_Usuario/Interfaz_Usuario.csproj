@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA42A878-6EB1-40B9-8F44-D2E14183F172}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Interfaz_Usuario</RootNamespace>
+    <AssemblyName>Interfaz_Usuario</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Interfaz_Usuario.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control_User\ConClientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_User\ConClientes.Designer.cs">
+      <DependentUpon>ConClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_User\ConCupoSede.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_User\ConCupoSede.Designer.cs">
+      <DependentUpon>ConCupoSede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_User\ConSedes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_User\ConSedes.Designer.cs">
+      <DependentUpon>ConSedes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_User\ConSedesCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_User\ConSedesCliente.Designer.cs">
+      <DependentUpon>ConSedesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_User\RegClientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_User\RegClientes.Designer.cs">
+      <DependentUpon>RegClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_User\RegCuposSedes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_User\RegCuposSedes.Designer.cs">
+      <DependentUpon>RegCuposSedes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_User\RegSedes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_User\RegSedes.Designer.cs">
+      <DependentUpon>RegSedes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_User\RegSedesCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_User\RegSedesCliente.Designer.cs">
+      <DependentUpon>RegSedesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConexionServidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConexionServidor.Designer.cs">
+      <DependentUpon>ConexionServidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Menu_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Menu_Principal.Designer.cs">
+      <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Control_User\ConClientes.resx">
+      <DependentUpon>ConClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_User\ConCupoSede.resx">
+      <DependentUpon>ConCupoSede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_User\ConSedes.resx">
+      <DependentUpon>ConSedes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_User\ConSedesCliente.resx">
+      <DependentUpon>ConSedesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_User\RegClientes.resx">
+      <DependentUpon>RegClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_User\RegCuposSedes.resx">
+      <DependentUpon>RegCuposSedes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_User\RegSedes.resx">
+      <DependentUpon>RegSedes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_User\RegSedesCliente.resx">
+      <DependentUpon>RegSedesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConexionServidor.resx">
+      <DependentUpon>ConexionServidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menu_Principal.resx">
+      <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultarClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultarCupos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultarSedes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultarSedesClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistrarCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistrarCupos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistrarSede.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistrarSedesClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reiniciar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-detener %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{fe6aebbf-0784-4de4-82fb-3ff9a3ee789f}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{6cfc5da6-5262-4a80-8a43-f8169e6d2c5d}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

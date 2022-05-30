@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "87988bcb-6eea-40dd-88cd-285df22c6fd8": {
+      "ProjectGuid": "87988bcb-6eea-40dd-88cd-285df22c6fd8",
+      "DisplayName": "MinorMarin-Tarea2",
+      "ColorIndex": 0
+    },
+    "4ed24826-da26-4119-aaba-94e7fc7c4bd0": {
+      "ProjectGuid": "4ed24826-da26-4119-aaba-94e7fc7c4bd0",
+      "DisplayName": "Interfaz_Usuario",
+      "ColorIndex": 1
+    },
+    "9e6a4f45-f4aa-4b6c-b458-ee0b612f9a04": {
+      "ProjectGuid": "9e6a4f45-f4aa-4b6c-b458-ee0b612f9a04",
+      "DisplayName": "Datos",
+      "ColorIndex": 2
+    },
+    "9a952379-e6fa-43bf-a9a4-a03afa37ccf7": {
+      "ProjectGuid": "9a952379-e6fa-43bf-a9a4-a03afa37ccf7",
+      "DisplayName": "Operaciones",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

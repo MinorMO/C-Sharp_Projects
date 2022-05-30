@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2435ebf1-79c1-4c15-854e-ff15c1e175c1": {
+      "ProjectGuid": "2435ebf1-79c1-4c15-854e-ff15c1e175c1",
+      "DisplayName": "Interfaz_Cliente",
+      "ColorIndex": 0
+    },
+    "c4a028ca-664d-4fff-ab8d-25d4825bbd68": {
+      "ProjectGuid": "c4a028ca-664d-4fff-ab8d-25d4825bbd68",
+      "DisplayName": "Datos",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "b6c0f4d3-b615-4489-998a-4fcbc9891feb": {
+      "ProjectGuid": "b6c0f4d3-b615-4489-998a-4fcbc9891feb",
+      "DisplayName": "EntidadesCliente",
+      "ColorIndex": 2
+    },
+    "12873aef-3946-4ebf-9908-245a1d8750a0": {
+      "ProjectGuid": "12873aef-3946-4ebf-9908-245a1d8750a0",
+      "DisplayName": "Datos",
+      "ColorIndex": 3
+    },
+    "f3fd45b1-da03-4a01-bcf0-f2403548bff4": {
+      "ProjectGuid": "f3fd45b1-da03-4a01-bcf0-f2403548bff4",
+      "DisplayName": "Datos",
+      "ColorIndex": 4
+    },
+    "c0dd0090-d6db-4573-8f1f-ea8639105aea": {
+      "ProjectGuid": "c0dd0090-d6db-4573-8f1f-ea8639105aea",
+      "DisplayName": "EntidadesCliente",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

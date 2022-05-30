@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "918e2b85-df2e-4f16-90d0-a16bd0aa1fc9": {
+      "ProjectGuid": "918e2b85-df2e-4f16-90d0-a16bd0aa1fc9",
+      "DisplayName": "Entidades",
+      "ColorIndex": 0
+    },
+    "64d6b365-3c5c-4c71-893a-fe9d3acf6124": {
+      "ProjectGuid": "64d6b365-3c5c-4c71-893a-fe9d3acf6124",
+      "DisplayName": "LogicaNegocio",
+      "ColorIndex": 1
+    },
+    "da42a878-6eb1-40b9-8f44-d2e14183f172": {
+      "ProjectGuid": "da42a878-6eb1-40b9-8f44-d2e14183f172",
+      "DisplayName": "Interfaz_Usuario",
+      "ColorIndex": 2
+    },
+    "fe6aebbf-0784-4de4-82fb-3ff9a3ee789f": {
+      "ProjectGuid": "fe6aebbf-0784-4de4-82fb-3ff9a3ee789f",
+      "DisplayName": "Datos",
+      "ColorIndex": 3
+    },
+    "6cfc5da6-5262-4a80-8a43-f8169e6d2c5d": {
+      "ProjectGuid": "6cfc5da6-5262-4a80-8a43-f8169e6d2c5d",
+      "DisplayName": "Entidades",
+      "ColorIndex": 4
+    },
+    "3cd1b635-a5ea-4ef2-968b-32367fb96576": {
+      "ProjectGuid": "3cd1b635-a5ea-4ef2-968b-32367fb96576",
+      "DisplayName": "LogicaNegocio",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

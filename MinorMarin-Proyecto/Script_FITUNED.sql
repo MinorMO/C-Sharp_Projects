@@ -1,0 +1,138 @@
+USE [master]
+GO
+
+CREATE DATABASE [FITUNED]
+ GO
+ 
+USE [FITUNED]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Sede](
+	[IdSede] [int] NOT NULL,
+	[Nombre] [varchar](50) NOT NULL,
+	[Direccion] [varchar](255) NOT NULL,
+	[Estado] [bit] NOT NULL,
+	[Telefono] [varchar](50) NULL,
+ CONSTRAINT [PK_Sede] PRIMARY KEY CLUSTERED 
+(
+	[IdSede] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Cliente](
+	[IdCliente] [varchar](10) NOT NULL,
+	[Nombre] [varchar](50) NOT NULL,
+	[PrimerApellido] [varchar](255) NOT NULL,
+	[SegundoApellido] [varchar](255) NULL,
+	[FechaNacimiento] [datetime] NOT NULL,
+	[Genero] [varchar](2) NOT NULL,
+	[FechaIngreso] [datetime] NOT NULL,
+ CONSTRAINT [PK_Cliente] PRIMARY KEY CLUSTERED 
+(
+	[IdCliente] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[AfiliacionSede](
+	[IdAfiliacion] [int] NOT NULL,
+	[FechaAfiliacion] [datetime] NOT NULL,
+	[IdCliente] [varchar](10) NOT NULL,
+	[IdSede] [int] NOT NULL,
+ CONSTRAINT [PK_AfiliacionSede] PRIMARY KEY CLUSTERED 
+(
+	[IdAfiliacion] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[AfiliacionSede]  WITH CHECK ADD  CONSTRAINT [FK_AfiliacionSede_Cliente] FOREIGN KEY([IdCliente])
+REFERENCES [dbo].[Cliente] ([IdCliente])
+GO
+
+ALTER TABLE [dbo].[AfiliacionSede] CHECK CONSTRAINT [FK_AfiliacionSede_Cliente]
+GO
+
+ALTER TABLE [dbo].[AfiliacionSede]  WITH CHECK ADD  CONSTRAINT [FK_AfiliacionSede_Sede] FOREIGN KEY([IdSede])
+REFERENCES [dbo].[Sede] ([IdSede])
+GO
+
+ALTER TABLE [dbo].[AfiliacionSede] CHECK CONSTRAINT [FK_AfiliacionSede_Sede]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[CupoSede](
+	[IdSede] [int] NOT NULL,
+	[FechaCupo] [datetime] NOT NULL,
+	[Cupos] [int] NOT NULL,
+ CONSTRAINT [PK_CupoSede] PRIMARY KEY CLUSTERED 
+(
+	[IdSede] ASC,
+	[FechaCupo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[CupoSede]  WITH CHECK ADD  CONSTRAINT [FK_CupoSede_Sede] FOREIGN KEY([IdSede])
+REFERENCES [dbo].[Sede] ([IdSede])
+GO
+
+ALTER TABLE [dbo].[CupoSede] CHECK CONSTRAINT [FK_CupoSede_Sede]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Reserva](
+	[IdReserva] [int] NOT NULL,
+	[IdSede] [int] NOT NULL,
+	[IdCliente] [varchar](10) NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+ CONSTRAINT [PK_Reserva] PRIMARY KEY CLUSTERED 
+(
+	[IdReserva] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Reserva]  WITH CHECK ADD  CONSTRAINT [FK_Reserva_Cliente] FOREIGN KEY([IdCliente])
+REFERENCES [dbo].[Cliente] ([IdCliente])
+GO
+
+ALTER TABLE [dbo].[Reserva] CHECK CONSTRAINT [FK_Reserva_Cliente]
+GO
+
+ALTER TABLE [dbo].[Reserva]  WITH CHECK ADD  CONSTRAINT [FK_Reserva_Sede] FOREIGN KEY([IdSede])
+REFERENCES [dbo].[Sede] ([IdSede])
+GO
+
+ALTER TABLE [dbo].[Reserva] CHECK CONSTRAINT [FK_Reserva_Sede]
+GO
+
+
